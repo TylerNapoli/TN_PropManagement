@@ -13,8 +13,8 @@ import './style/main.scss';
 
 import Layout from './components/layout';
 
-import Signup from './components/auth/signin';
-import Signin from './components/auth/signup';
+import Signup from './components/auth/signup';
+import Signin from './components/auth/signin';
 
 
 function main() {
