@@ -2,6 +2,6 @@ import {
     signUp
 } from './auth';
 
-export {
+ export {
     signUp
 };
