@@ -1,7 +1,9 @@
 import {
-    signUp
+    signUp,
+    signIn
 } from './auth';
 
- export {
-    signUp
+export {
+    signUp,
+    signIn
 };
