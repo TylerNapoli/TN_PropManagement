@@ -3,31 +3,25 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Router, Route, Switch } from 'react-router-dom';
-import reduxThunk from 'redux-thunk';import reducers from './reducers';
+import reduxThunk from 'redux-thunk';
+import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
 // import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
+import history from './history';
+
 import Layout from './components/layout';
 
+//Auth
+import requireAuth from './components/requireAuth';
 import Signup from './components/auth/signup';
 import Signin from './components/auth/signin';
 
-import history from './history';
-
-import requireAuth from './components/requireAuth';
-
-class Dashboard extends Component {
-  render() {
-    return (
-      <div>
-          hey there
-      </div>
-    )
-  }
-}
+//Dashboard
+import Dashboard from './components/dashboard';
 
 function main() {
 ReactDOM.render(
