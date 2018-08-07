@@ -3,6 +3,7 @@ import {
     signIn
 } from './auth';
 
+<<<<<<< HEAD
 import { 
     fetchNewsletters,
     fetchNewsletterWithId,
@@ -33,4 +34,9 @@ export {
     createNewNewsletter,
     editNewsletter,
     updateHeader
+=======
+export {
+    signUp,
+    signIn
+>>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4
 };
