@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-<<<<<<< HEAD
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
@@ -14,12 +13,6 @@ class Dashboard extends Component {
         this.props.updateHeader(`Welcome ${this.props.name}`, 'HOA Management', true);
     }
 
-=======
-import TabNav from './tabnav';
-
-class Dashboard extends Component {
-
->>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4
     constructor(props) {
         super(props);
 
@@ -27,29 +20,18 @@ class Dashboard extends Component {
             tabs: [
                 {
                     title: 'Newsletter',
-<<<<<<< HEAD
                     active: true,
                     component: <NewsletterGrid history={this.props.history}/>
-=======
-                    active: false,
-                    component: <h4>Hey There - Newsletter</h4>
->>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4
                 },
                 {
                     title: 'Requests',
                     active: false,
-<<<<<<< HEAD
                     component: <RequestsGrid history={this.props.history}/>
                 }
-=======
-                    component: <h4>Hey There - Requests</h4>
-                },
->>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4
             ]
         }
     }
 
-<<<<<<< HEAD
     handleTabChange = (title) => {
         const tabs = this.state.tabs;
 
@@ -81,14 +63,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, actions)(Dashboard);
-=======
-render() {
-    return (
-        <div className='dashboard'>
-            <TabNav tabs={this.state.tabs}/>
-        </div>
-    )}
-}
-
-export default Dashboard;
->>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const AUTHENTICATE_USER = 'AUTHENTICATE_USER';
 
 // NEWSLETTER ACTIONS
@@ -11,6 +10,3 @@ export const SET_REQUESTS = 'SET_REQUESTS';
 
 // HEADER
 export const UPDATE_HEADER = 'UPDATE_HEADER';
-=======
-export const AUTHENTICATE_USER = 'AUTHENTICATE_USER'
->>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4

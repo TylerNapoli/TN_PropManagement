@@ -1,6 +1,5 @@
 .tab-nav {
     display: grid;
-<<<<<<< HEAD
     grid-template-rows: [tabs-s] 50px [tabs-e content-s] 1fr [content-e]; 
 
     height: 100%;
@@ -37,15 +36,5 @@
     &__active {
         color: $color-red-BA;
         border-bottom: 2px solid $color-red-BA;
-=======
-    grid-template-rows: [tabs-s] 50px [tabs-e content-s] 1fr [content-e];
-    &__tabs {
-      grid-row: tabs-s/tabs-e;
-      background: cornflowerblue;
-
-    }
-    &__tab {
-
->>>>>>> e5b6c86b88a1ce58214aa38b2dbc97c9230466f4
     }
 }
