@@ -15,7 +15,7 @@ class SignupForm extends Component {
         <FormTitle className="sign-up-form__title" text="New User" />
         <Field
           className="sign-up-form__fullname"
-          placeholder="Enter Full Name"
+          placeholder="Enter Your Full Name"
           name="fullname"
           type="text"
           title="Full Name"
@@ -23,7 +23,7 @@ class SignupForm extends Component {
         />
         <Field
           className="sign-up-form__unit"
-          placeholder="Enter Unit Number"
+          placeholder="Enter Unit #"
           name="unit"
           type="text"
           title="Unit #"
@@ -52,8 +52,8 @@ class SignupForm extends Component {
           title="Create Account"
           component={FormButton}
         />
-        <div className="sign-up-form__text-links">
-          <TextLink to='/signin' text='Already Registered? Login'/>
+        <div className='sign-up-form__text-links'>
+            <TextLink to='/signin' text='Already Registered? Login'/>
         </div>
         
       </form>

@@ -6,20 +6,23 @@ import SignupForm from './signupForm';
 
 class Signup extends Component {
 
-     onSubmit = (fields) => {
-        
+    onSubmit = (fields) => {
         this.props.signUp(fields, () => {
             console.log('navigate to dashboard');
             this.props.history.push('/dashboard');
         })
     }
 
-     render() {
-         return (
-             <div className='sign-up'>
-                 <SignupForm onSubmit={(event) => this.onSubmit(event)}/>
-             </div>
-         )
+    componentDidMount() {
+        this.props.updateHeader('Welcome to HOA Manager!', 'Please login to continue', false);
+    }
+
+    render() {
+        return (
+            <div className='sign-up'>
+                <SignupForm onSubmit={(event) => this.onSubmit(event)}/>
+            </div>
+        )
     }
 }
 
